@@ -36,6 +36,28 @@ const App = () => {
     });
   };
 
+  const removeItemFromCart = (id) => {
+    setItensCarrinho((prevItems) => {
+      return prevItems.filter((item) => item.id !== id);
+    });
+  };
+
+  const updateItemQuantity = (id, newQty) => {
+    if (newQty <= 0) {
+      removeItemFromCart(id);
+      return;
+    }
+    
+    setItensCarrinho((prevItems) => {
+      return prevItems.map((item) => {
+        if (item.id == id) {
+          return { ...item, qty: newQty };
+        }
+        return item;
+      });
+    });
+  };
+
   const getItemsCount = () => {
     return itensCarrinho.reduce((sum, item) => sum + item.qty, 0);
   };
@@ -74,7 +96,7 @@ const App = () => {
             headerRight: () => <CartIcon navigation={navigation} getItemsCount={getItemsCount} />,
           })}
         >
-          {(props) => <Cart {...props} items={itensCarrinho} getTotalPrice={getTotalPrice} />}
+          {(props) => <Cart {...props} items={itensCarrinho} getTotalPrice={getTotalPrice} removeItemFromCart={removeItemFromCart} updateItemQuantity={updateItemQuantity} />}
         </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
