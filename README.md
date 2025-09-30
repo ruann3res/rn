@@ -2,28 +2,28 @@
 
 Este projeto é um aplicativo de carrinho de compras desenvolvido em React Native com Expo, integrado ao Firebase para gerenciamento de produtos.
 
-## 🚀 Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
-### ✅ Sistema de Carrinho Completo
+### Sistema de Carrinho Completo
 - **Exibição do carrinho**: Interface visual completa mostrando todos os itens adicionados
 - **Controles de quantidade**: Botões para aumentar (+) e diminuir (-) a quantidade de itens
 - **Remoção de itens**: Botão para remover itens completamente do carrinho
 - **Cálculo automático**: Total individual por item e total geral do carrinho
 - **Estado vazio**: Mensagem amigável quando o carrinho está vazio
 
-### 🎨 Interface do Usuário
+### Interface do Usuário
 - **Design moderno**: Cards com sombras, bordas arredondadas e layout responsivo
 - **Imagens dos produtos**: Exibição das imagens dos itens no carrinho
 - **Informações detalhadas**: Nome, preço unitário e total por item
 - **Navegação intuitiva**: Ícone do carrinho no header com contador de itens
 
-### 🔧 Funcionalidades Técnicas
+### Funcionalidades Técnicas
 - **Gerenciamento de estado**: Estado do carrinho centralizado no App.js
 - **Funções assíncronas**: Carregamento correto de produtos do Firebase
 - **Tratamento de erros**: Validação e tratamento de erros na adição de itens
 - **Performance**: Uso de FlatList para renderização eficiente de listas
 
-## 📱 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 src/
@@ -41,7 +41,7 @@ src/
     └── productsService.js   # Serviços de produtos
 ```
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **React Native** - Framework para desenvolvimento mobile
 - **Expo** - Plataforma de desenvolvimento
@@ -49,7 +49,7 @@ src/
 - **React Navigation** - Navegação entre telas
 - **JavaScript ES6+** - Linguagem de programação
 
-## 🚀 Como Executar
+## Como Executar
 
 1. **Instalar dependências**:
    ```bash
@@ -68,7 +68,7 @@ src/
    - Use o Expo Go no seu smartphone
    - Escaneie o QR code gerado
 
-## 📋 Funcionalidades da Tela do Carrinho
+## Funcionalidades da Tela do Carrinho
 
 ### Interface Visual
 - **Lista de itens**: Exibição em cards com informações completas
@@ -86,14 +86,14 @@ src/
 - **Carrinho com itens**: Lista completa com controles
 - **Carrinho vazio**: Mensagem amigável incentivando adicionar produtos
 
-## 🔄 Fluxo de Funcionamento
+## Fluxo de Funcionamento
 
 1. **Adicionar produto**: Usuário adiciona produto na tela de detalhes
 2. **Navegar para carrinho**: Toca no ícone do carrinho no header
 3. **Gerenciar itens**: Usa os controles para ajustar quantidades
 4. **Visualizar total**: Acompanha o valor total em tempo real
 
-## 📝 Commits Realizados
+## Commits Realizados
 
 O projeto foi desenvolvido com commits incrementais seguindo boas práticas:
 
@@ -102,7 +102,7 @@ O projeto foi desenvolvido com commits incrementais seguindo boas práticas:
 3. **Interface completa**: Tela do carrinho com todos os controles
 4. **Correções**: Melhorias na função assíncrona de adicionar itens
 
-## 🎯 Próximos Passos Sugeridos
+## Próximos Passos Sugeridos
 
 - [ ] Implementar persistência local do carrinho
 - [ ] Adicionar animações nas transições
@@ -110,10 +110,9 @@ O projeto foi desenvolvido com commits incrementais seguindo boas práticas:
 - [ ] Adicionar validações de estoque
 - [ ] Implementar sistema de favoritos
 
-## 📞 Suporte
+## Suporte
 
 Para dúvidas ou sugestões sobre este projeto, consulte a documentação do React Native e Expo, ou entre em contato com a equipe de desenvolvimento.
 
 ---
 
-**Desenvolvido com ❤️ usando React Native e Expo**
